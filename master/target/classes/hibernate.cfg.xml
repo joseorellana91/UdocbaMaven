@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE hibernate-configuration PUBLIC "-//Hibernate/Hibernate Configuration DTD 3.0//EN" "http://hibernate.sourceforge.net/hibernate-configuration-3.0.dtd">
+<hibernate-configuration>
+  <session-factory>
+    <property name="hibernate.connection.driver_class">com.mysql.jdbc.Driver</property>
+    <property name="hibernate.connection.url">jdbc:mysql://localhost:3306/baseudocba_dev_v2</property>
+    <property name="hibernate.enable_lazy_load_no_trans">true</property>
+    <property name="hibernate.connection.username">root</property>
+    <property name="hibernate.connection.password"></property>
+    <property name="connection.pool_size">1</property>
+    <property name="show_sql">true</property>
+    <property name="hbm2ddl.auto">validate</property>
+    <property name="hibernate.dialect">org.hibernate.dialect.MySQL5Dialect</property>
+    <mapping class="com.udocba.modelo.entidades.EscuelaDto"/>
+    <mapping class="com.udocba.modelo.entidades.DireccionAfiliadoDto"/>
+    <mapping class="com.udocba.modelo.entidades.AfiliadoDto"/>
+    <mapping class="com.udocba.modelo.entidades.ClasificacionDto"/>
+    <mapping class="com.udocba.modelo.entidades.RegistroDto"/>
+    <mapping class="com.udocba.modelo.entidades.ServicioDto"/>
+    <mapping class="com.udocba.modelo.entidades.SubClasificaDto"/>
+    <mapping class="com.udocba.modelo.entidades.TramiteDto"/>
+    <mapping class="com.udocba.modelo.entidades.UsuarioDto"/>
+    <mapping class="com.udocba.modelo.entidades.GrupoDto"/>
+    <mapping class="com.udocba.modelo.entidades.SedeDto"/>
+    <mapping class="com.udocba.modelo.entidades.SecretariaDto"/>
+    <mapping class="com.udocba.modelo.entidades.TelefonoEscuelaDto"/>
+    <mapping class="com.udocba.modelo.entidades.ProvinciaDto"/>
+    <mapping class="com.udocba.modelo.entidades.LocalidadDto"/>
+    <mapping class="com.udocba.modelo.entidades.DireccionEscuelaDto"/>
+
+   
+
+    
+  </session-factory>
+</hibernate-configuration>
